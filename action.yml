@@ -1,0 +1,14 @@
+name: 'Github workflow cleanup'
+description: 'Removes workflows that are older than the specified date'
+inputs:
+  created-date:  # id of input
+    description: 'FOOBAR'
+    required: true
+    default: '30d'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node12'
+  main: 'index.js'
+
